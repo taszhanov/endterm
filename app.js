@@ -41,7 +41,7 @@ http.createServer(function(req, res){
             break;
         case "/script.js":
             serveStaticFile(res, "/script.js", "application/javascript")
-            break:
+            break;
     }
 }).listen(3000);
 
