@@ -33,6 +33,9 @@ http.createServer(function(req, res){
         case "/img/gallery/study":
             serveStaticFile(res, "/img/gallery/study.jpg", "image/jpeg")
             break;
+        case "/style.css":
+            serveStaticFile(res, "/style.css", "text/css")
+            break;
         default:
             serveStaticFile(res, "/error.html", "text/html", 404)
             break;
