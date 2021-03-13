@@ -39,6 +39,9 @@ http.createServer(function(req, res){
         default:
             serveStaticFile(res, "/error.html", "text/html", 404)
             break;
+        case "/script.js":
+            serveStaticFile(res, "/script.js", "application/javascript")
+            break:
     }
 }).listen(3000);
 
